@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Персонажи Dota 2 </string>
+    <string name="error">Ошибка</string>
+    <string name="reload">Перезагрузить</string>
+
+    <string name="tvPrimaryAttrTitleText">Главный Атрибут:</string>
+    <string name="tvPrimaryAttrValueText">Ловкость:</string>
+    <string name="tvAttackTypeTitleText">Тип атаки:</string>
+    <string name="tvBaseAgiTitleText">Ловкость:</string>
+    <string name="tvBaseHealthTitleText">Базовое здоровье:</string>
+    <string name="tvBaseManaTitleText">Базовая мана:</string>
+    <string name="tvBaseStrTitleText">Сила:</string>
+    <string name="tvBaseIntTitleText">Интеллект:</string>
+    <string name="tvAttackRangeTitleText">Дальность атаки:</string>
+    <string name="tvBaseMinAttackTitleText">Минимальная атака:</string>
+    <string name="tvBaseArmorTitleText">Базовая защита:</string>
+    <string name="tvBaseMaxAttackTitleText">Максимальная атака:</string>
+    <string name="buttonBackToListHeroesFragmentText">назад</string>
+</resources>
