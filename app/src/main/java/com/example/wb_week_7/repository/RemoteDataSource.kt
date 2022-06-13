@@ -1,11 +1,11 @@
-package com.example.wb_week_5.repository
+package com.example.wb_week_7.repository
 
 import okhttp3.Callback
 import okhttp3.OkHttpClient
 import okhttp3.Request
 
 class RemoteDataSource {
-    fun getListHero(request: String, callback: Callback) {
+    fun getListHeroes(request: String, callback: Callback) {
         val builder: Request.Builder = Request.Builder().apply {
             url(request)
         }

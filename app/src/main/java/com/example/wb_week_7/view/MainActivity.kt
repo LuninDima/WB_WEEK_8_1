@@ -1,9 +1,9 @@
-package com.example.wb_week_5.view
+package com.example.wb_week_7.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.wb_week_5.R
-import com.example.wb_week_5.view.listHeroes.ListHeroesFragment
+import com.example.wb_week_7.R
+import com.example.wb_week_7.view.listHeroes.ListHeroesFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

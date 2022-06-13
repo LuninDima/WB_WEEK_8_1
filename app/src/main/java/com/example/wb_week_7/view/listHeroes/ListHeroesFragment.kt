@@ -1,4 +1,4 @@
-package com.example.wb_week_5.view.listHeroes
+package com.example.wb_week_7.view.listHeroes
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.wb_week_5.R
-import com.example.wb_week_5.databinding.FragmentListHeroesBinding
-import com.example.wb_week_5.model.Hero
-import com.example.wb_week_5.utils.showSnackBar
-import com.example.wb_week_5.view.heroDetails.HeroDetailsFragment
-import com.example.wb_week_5.viewModel.AppStateList
-import com.example.wb_week_5.viewModel.ListHeroViewModel
+import com.example.wb_week_7.R
+import com.example.wb_week_7.databinding.FragmentListHeroesBinding
+import com.example.wb_week_7.model.Hero
+import com.example.wb_week_7.utils.showSnackBar
+import com.example.wb_week_7.view.heroDetails.HeroDetailsFragment
+import com.example.wb_week_7.viewModel.AppStateList
+import com.example.wb_week_7.viewModel.ListHeroViewModel
 
 private const val REQUEST_LINK = "https://api.opendota.com/api/herostats"
 
@@ -41,7 +41,7 @@ class ListHeroesFragment : Fragment() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        viewModel.getListHeroFromRemoteServer(REQUEST_LINK)
+        viewModel.getDataHeroes(REQUEST_LINK)
         super.onCreate(savedInstanceState)
     }
 
@@ -57,26 +57,23 @@ class ListHeroesFragment : Fragment() {
 
     private fun renderData(appStateList: AppStateList) {
         with(binding) {
-            with(listHeroesFragmentLoadingLayout) {
-                when (appStateList) {
-                    is AppStateList.Success -> {
-                        listHeroesFragmentLoadingLayout.visibility = View.GONE
-                        adapter.setListHeroes(appStateList.listHero)
-                    }
-                    is AppStateList.Loading -> {
-                        listHeroesFragmentLoadingLayout.visibility = View.VISIBLE
-                    }
-                    is AppStateList.Error -> {
-                        listHeroesFragmentLoadingLayout.visibility = View.GONE
-                        listHeroesFragmentRootView.showSnackBar(
-                            getString(R.string.error),
-                            getString(R.string.reload),
-                            {
-                                viewModel.getListHeroFromRemoteServer(REQUEST_LINK)
-                            }
-                        )
-
-                    }
+            when (appStateList) {
+                is AppStateList.Loading -> {
+                    listHeroesFragmentLoadingLayout.visibility = View.VISIBLE
+                }
+                is AppStateList.Success -> {
+                    listHeroesFragmentLoadingLayout.visibility = View.GONE
+                    adapter.setListHeroes(appStateList.listHero)
+                }
+                is AppStateList.Error -> {
+                    listHeroesFragmentLoadingLayout.visibility = View.GONE
+                    listHeroesFragmentRootView.showSnackBar(
+                        getString(R.string.error),
+                        getString(R.string.reload),
+                        {
+                            viewModel.getListHeroFromRemoteServer(REQUEST_LINK)
+                        }
+                    )
                 }
             }
         }

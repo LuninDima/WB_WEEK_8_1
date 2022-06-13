@@ -1,4 +1,4 @@
-package com.example.wb_week_5.model
+package com.example.wb_week_7.model
 
 import android.os.Parcelable
 import com.squareup.moshi.Json
