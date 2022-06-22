@@ -1,7 +1,7 @@
-package com.example.wb_week_7.repository
+package com.example.wb_week_8_1.repository
 
 import android.content.Context
-import com.example.wb_week_7.App
+import com.example.wb_week_8_1.App
 
 class LocalDataSource {
     fun getDataHeroes(fileNameForData: String): String {

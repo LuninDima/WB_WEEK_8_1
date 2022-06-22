@@ -1,4 +1,4 @@
-package com.example.wb_week_7.view.listHeroes
+package com.example.wb_week_8_1.view.listHeroes
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.wb_week_7.R
-import com.example.wb_week_7.databinding.FragmentListHeroesBinding
-import com.example.wb_week_7.model.Hero
-import com.example.wb_week_7.utils.showSnackBar
-import com.example.wb_week_7.view.heroDetails.HeroDetailsFragment
-import com.example.wb_week_7.viewModel.AppStateList
-import com.example.wb_week_7.viewModel.ListHeroViewModel
+import com.example.wb_week_8_1.R
+import com.example.wb_week_8_1.databinding.FragmentListHeroesBinding
+import com.example.wb_week_8_1.model.Hero
+import com.example.wb_week_8_1.utils.showSnackBar
+import com.example.wb_week_8_1.view.heroDetails.HeroDetailsFragment
+import com.example.wb_week_8_1.viewModel.AppStateList
+import com.example.wb_week_8_1.viewModel.ListHeroViewModel
 
 private const val REQUEST_LINK = "https://api.opendota.com/api/herostats"
 

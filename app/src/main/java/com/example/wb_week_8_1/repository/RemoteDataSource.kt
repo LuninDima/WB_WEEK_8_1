@@ -1,4 +1,4 @@
-package com.example.wb_week_7.repository
+package com.example.wb_week_8_1.repository
 
 import okhttp3.Callback
 import okhttp3.OkHttpClient

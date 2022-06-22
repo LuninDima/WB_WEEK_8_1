@@ -1,4 +1,4 @@
-package com.example.wb_week_7.utils
+package com.example.wb_week_8_1.utils
 
 private val translations = mapOf(
     "agi" to "ловкость",

@@ -1,4 +1,4 @@
-package com.example.wb_week_7.view.heroDetails
+package com.example.wb_week_8_1.view.heroDetails
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import coil.load
-import com.example.wb_week_7.databinding.FragmentHeroDetailsBinding
-import com.example.wb_week_7.model.Hero
-import com.example.wb_week_7.utils.translation
+import com.example.wb_week_8_1.databinding.FragmentHeroDetailsBinding
+import com.example.wb_week_8_1.model.Hero
+import com.example.wb_week_8_1.utils.translation
 
 class HeroDetailsFragment : Fragment() {
     private var _binding: FragmentHeroDetailsBinding? = null

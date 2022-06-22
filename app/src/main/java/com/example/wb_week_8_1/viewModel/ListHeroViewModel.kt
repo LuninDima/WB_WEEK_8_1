@@ -1,14 +1,14 @@
-package com.example.wb_week_7.viewModel
+package com.example.wb_week_8_1.viewModel
 
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.wb_week_7.repository.LocalDataSource
-import com.example.wb_week_7.repository.RemoteDataSource
-import com.example.wb_week_7.repository.Repository
-import com.example.wb_week_7.repository.RepositoryImpl
-import com.example.wb_week_7.utils.checkIsExistFileLocalDataHeroes
-import com.example.wb_week_7.utils.convertStringTOListHeroes
+import com.example.wb_week_8_1.repository.LocalDataSource
+import com.example.wb_week_8_1.repository.RemoteDataSource
+import com.example.wb_week_8_1.repository.Repository
+import com.example.wb_week_8_1.repository.RepositoryImpl
+import com.example.wb_week_8_1.utils.checkIsExistFileLocalDataHeroes
+import com.example.wb_week_8_1.utils.convertStringTOListHeroes
 import okhttp3.Call
 import okhttp3.Callback
 import okhttp3.Response

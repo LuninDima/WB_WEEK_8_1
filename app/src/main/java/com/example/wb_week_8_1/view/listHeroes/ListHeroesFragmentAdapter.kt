@@ -1,4 +1,4 @@
-package com.example.wb_week_7.view.listHeroes
+package com.example.wb_week_8_1.view.listHeroes
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import com.example.wb_week_7.R
-import com.example.wb_week_7.model.Hero
+import com.example.wb_week_8_1.R
+import com.example.wb_week_8_1.model.Hero
 
 class ListHeroesFragmentAdapter(
     private var onItemViewClickListener:

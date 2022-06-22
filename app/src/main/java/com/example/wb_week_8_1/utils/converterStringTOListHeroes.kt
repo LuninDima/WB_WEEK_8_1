@@ -1,6 +1,6 @@
-package com.example.wb_week_7.utils
+package com.example.wb_week_8_1.utils
 
-import com.example.wb_week_7.model.Hero
+import com.example.wb_week_8_1.model.Hero
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
